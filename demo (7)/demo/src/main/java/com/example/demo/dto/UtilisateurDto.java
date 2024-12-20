@@ -1,7 +1,7 @@
 package com.example.demo.dto;
 
-import com.example.pigeon.entity.Role;
-import com.example.pigeon.entity.Utilisateur;
+import com.example.demo.entity.Role;
+import com.example.demo.entity.Utilisateur;
 import jakarta.persistence.EnumType;
 import jakarta.persistence.Enumerated;
 import jakarta.validation.constraints.NotBlank;
@@ -20,8 +20,7 @@ public class UtilisateurDto {
     @NotBlank(message = "Le nom ne peut pas être vide.")
     private String nom;
 
-    private double latitude;
-    private double longitude;
+
 
     @NotNull(message = "Le mot de passe ne peut pas être vide.")
     private String motDePasse;
@@ -34,8 +33,6 @@ public class UtilisateurDto {
         return UtilisateurDto.builder()
                 .username(entity.getUsername())
                 .nom(entity.getNom())
-                .latitude(entity.getLatitude())
-                .longitude(entity.getLongitude())
                 .role(entity.getRole())
                 .build();
     }
@@ -44,8 +41,6 @@ public class UtilisateurDto {
         return Utilisateur.builder()
                 .username(this.username)
                 .nom(this.nom)
-                .latitude(this.latitude)
-                .longitude(this.longitude)
                 .motDePasse(this.motDePasse)
                 .role(this.role)
                 .build();

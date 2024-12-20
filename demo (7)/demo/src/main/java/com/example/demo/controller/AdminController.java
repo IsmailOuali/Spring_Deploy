@@ -1,9 +1,9 @@
 package com.example.demo.controller;
 
 
-import com.example.pigeon.dto.UtilisateurDto;
-import com.example.pigeon.entity.Role;
-import com.example.pigeon.service.UserService;
+import com.example.demo.dto.UtilisateurDto;
+import com.example.demo.entity.Role;
+import com.example.demo.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.security.access.prepost.PreAuthorize;

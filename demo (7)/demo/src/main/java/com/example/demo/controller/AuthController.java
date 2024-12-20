@@ -1,9 +1,9 @@
 package com.example.demo.controller;
 
-import com.example.pigeon.dto.LoginRequestDto;
-import com.example.pigeon.dto.UtilisateurDto;
-import com.example.pigeon.exception.EmptyException;
-import com.example.pigeon.service.UserService;
+import com.example.demo.dto.LoginRequestDto;
+import com.example.demo.dto.UtilisateurDto;
+import com.example.demo.exception.EmptyException;
+import com.example.demo.service.UserService;
 import jakarta.validation.Valid;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
